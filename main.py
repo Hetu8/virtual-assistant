@@ -30,9 +30,6 @@ def processCommand(command):
             webbrowser.open(link)
         else: 
             speak("sorry, I couldn't find that song")    
-
-    elif "news" in command(): 
-        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey=38321bcf91cf43f592683d62c6c91233")
     
         if r.status_code == 200:
             # parse the JSON response
